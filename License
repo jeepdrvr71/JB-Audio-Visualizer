@@ -1,0 +1,10 @@
+---
+
+### 6. Commands to Push From Your Raspberry Pi to GitHub
+
+1. **Create an empty repository on GitHub:** Go to [github.com/new](https://github.com/new), name it `jb-audio-visualizer`, leave **Initialize this repository with a README** unchecked, and click **Create repository**.
+2. **Assemble your project folder on the Pi:**
+   ```bash
+   mkdir -p ~/jb-audio-visualizer/systemd
+   cp ~/visualizer.py ~/wifi_portal.py ~/5x8.bdf ~/jb-audio-visualizer/
+   cd ~/jb-audio-visualizer
