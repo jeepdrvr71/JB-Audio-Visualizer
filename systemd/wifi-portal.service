@@ -1,0 +1,14 @@
+[Unit]
+Description=JB Audio Captive Wi-Fi Setup Portal
+After=NetworkManager.service
+Wants=NetworkManager.service
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/home/pi/jb-audio-visualizer
+ExecStart=/home/pi/jb-audio-visualizer/env/bin/python /home/pi/jb-audio-visualizer/wifi_portal.py
+Restart=no
+
+[Install]
+WantedBy=multi-user.target
