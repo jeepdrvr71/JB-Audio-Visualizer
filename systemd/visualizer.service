@@ -1,0 +1,14 @@
+[Unit]
+Description=JB Audio 16x32 RGB LED Matrix Visualizer
+After=network.target sound.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/home/pi/jb-audio-visualizer
+ExecStart=/home/pi/jb-audio-visualizer/env/bin/python /home/pi/jb-audio-visualizer/visualizer.py
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
