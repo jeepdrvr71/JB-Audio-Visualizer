@@ -1,0 +1,6 @@
+Usage
+First-Time Wi-Fi Setup: If offline at boot, connect your phone to the JB-Audio-Setup Wi-Fi network, navigate to http://10.42.0.1, select your router, and enter the password.
+
+Tuning Controls: Note the IP address scrolled on the LED matrix after boot and open http://<IP_ADDRESS> in any browser on the same network.
+
+Shutting Down: Press the physical button wired to SCL/GND or click Safe Shutdown in the web dashboard. Wait for "Safe to shutdown" to finish and the SDA LED to turn off before unplugging power.
